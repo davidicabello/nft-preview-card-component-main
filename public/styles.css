@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* 
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+    /*### Primary*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* ### Neutral */
+
+    /*(main BG)*/
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    /*(card BG)*/
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    /*(line)*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: var(--Very-dark-blue-main);
+}
+
+hr {
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+p {
+    font-size: 18px;
+    color: var(--soft-blue);
+    display: flex;
+    max-width: 350px;
+    margin-left: 10px;
+}
+
+h1 {
+    color: var(--White);
+    display: flex;
+    margin-left: 10px;
+}
+
+h1:hover {
+    color: var(--cyan);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ethColor {
+    display: flex;
+    color: var(--cyan);
+}
+
+.ethColor img {
+    margin-right: 10px;
+}
+
+.timeColor {
+    display: flex;
+    color: var(--soft-blue);
+}
+
+.timeColor img {
+    margin-right: 10px;
+}
+
+.creatorName {
+    color: var(--White);
+    margin-left: 10px;
+}
+
+.creatorName:hover {
+    color: var(--cyan);
+}
+
+.container {
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.mainImage {
+    background: var(--cyan);
+    background-image: url(images/icon-view.svg);
+    background-size: auto 100%;
+    border-radius: 20px;
+}
+
+.mainImage img {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: block;
+    justify-content: space-evenly;
+}
+
+.mainImage img:hover {
+    opacity: 0.6;
+}
+
+.card {
+    background-color: var(--Very-dark-blue-card);
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContent {
+    padding: 30px;
+}
+
+.cryptoDescription {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.cryptoData {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.creatorData {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-blue);
+}

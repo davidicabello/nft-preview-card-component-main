@@ -86,7 +86,8 @@ a {
 }
 
 .container {
-    display: grid;
+    display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
@@ -168,7 +169,6 @@ a {
     }
 
     .cryptoData {
-
         gap: 7rem;
     }
 }
